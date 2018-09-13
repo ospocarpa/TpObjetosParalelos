@@ -1,6 +1,7 @@
 /** First Wollok example */
-object wollok {
-	method howAreYou() {
-		return 'I am Wolloktastic!'
+object rolando {
+	const valorBase = 3
+	method valorBase() {
+		return valorBase
 	}
 }
