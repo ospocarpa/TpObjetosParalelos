@@ -1,0 +1,34 @@
+import Rolando.*
+import fuerzaoscura.*
+import MAgias.*
+import artifacts.*
+
+describe "Pruebas Rolando" {
+
+	test "Rolando power 56 con todo por defecto" {
+
+		assert.equals(rolando.nivelDePoder(),56)
+
+	}
+	
+	test "Rolando power 125 con su hechizo favorito cambiado" {
+		espectroMalefico.nombre("espectro superrecontramalefico muajajaja")
+		assert.equals(rolando.nivelDePoder(),125)
+	}
+	
+	test "Rolando power 35 cuando su hechizo favorito es hechizoBasico" {
+		rolando.hechizoFavorito(hechizoBasico)
+		assert.equals(rolando.nivelDePoder(),35)
+	}
+	
+	test "Rolando power 61 cuando ocurre un eclipse muaja" {
+		fuerza.eclipse()
+		assert.equals(rolando.nivelDePoder(),61)
+	}
+	
+	test "caprichito de oscar rolando es poderosisimo :v" {
+		assert.that(rolando.seCreePoderoso())
+	}
+	
+	
+}

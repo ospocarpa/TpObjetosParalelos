@@ -1,15 +1,12 @@
 object espectroMalefico {
-	var nombre = "espectro malefico"
-	method nombre()= nombre
-	method nombre(otroNombre){nombre = otroNombre}
+	var property nombre = "espectro malefico"
 	method poder()=self.nombre().size()	
 	method esPoderoso()=self.poder()>15
 	
 }
 
 object hechizoBasico {
-	var poder = 10
-	method poder()=poder
+	var property poder = 10
 	method esPoderoso()=self.poder()>15
 	
 }

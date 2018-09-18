@@ -1,0 +1,20 @@
+import Rolando.*
+import fuerzaoscura.*
+import MAgias.*
+import artifacts.*
+
+describe "Test de las Magias magicas maravillosas" {
+
+	test "Espectro malefico es overpower" {
+		assert.that(espectroMalefico.esPoderoso())
+	}
+	
+	test "Espectro malefico no es overpower si cambia su nombre a pepe" {
+		espectroMalefico.nombre("pepe")
+		assert.notThat(espectroMalefico.esPoderoso())
+	}
+	
+	test "Hechizo Basico no es overpower :C QwQ" {
+		assert.notThat(hechizoBasico.esPoderoso())
+	}
+}
