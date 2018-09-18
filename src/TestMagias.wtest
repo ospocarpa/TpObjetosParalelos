@@ -5,16 +5,16 @@ import artifacts.*
 
 describe "Test de las Magias magicas maravillosas" {
 
-	test "Espectro malefico es overpower" {
+	test "Espectro malefico es poderoso" {
 		assert.that(espectroMalefico.esPoderoso())
 	}
 	
-	test "Espectro malefico no es overpower si cambia su nombre a pepe" {
+	test "Espectro malefico no es poderoso si cambia su nombre a pepe" {
 		espectroMalefico.nombre("pepe")
 		assert.notThat(espectroMalefico.esPoderoso())
 	}
 	
-	test "Hechizo Basico no es overpower :C QwQ" {
+	test "Hechizo Basico no es poderoso QwQ" {
 		assert.notThat(hechizoBasico.esPoderoso())
 	}
 }

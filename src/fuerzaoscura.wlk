@@ -1,7 +1,7 @@
-object fuerza{
-	var property fuerzaOscura = 5
+object fuerzaOscura{
+	var property fuerzaActual = 5
 	method eclipse(){
-		fuerzaOscura = self.fuerzaOscura()*2
+		fuerzaActual = self.fuerzaActual()*2
 	}
 	
 }
