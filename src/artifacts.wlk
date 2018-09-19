@@ -1,19 +1,15 @@
 import fuerzaoscura.*
 
 object espadaDelDestino {
-	const unidadesDeLucha = 3
-	method unidadesDeLucha() = unidadesDeLucha
-}
+	const property unidadesDeLucha = 3
+	}
 
 object collarDivino{
-	var perlas
-	method poder()= perlas
-	method cantidadPerlas() = perlas
-	method nuevaCantidadDePerlas(nuevaCantidad) {
-		perlas = nuevaCantidad
-	}
+	var property perlas = 5
+	method poder() = self.perlas()
 }
 
 object mascaraOscura{
-	method unidadesDeLucha() = 4
+	var property unidadesDeLucha =  4.max(fuerzaOscura.fuerzaActual()/2) 
+	method actualizarUnidadesDeLucha() = { unidadesDeLucha = 4.max(fuerzaOscura.fuerzaActual()/2) }
 }
