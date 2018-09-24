@@ -1,9 +1,9 @@
 import mundo.*
 import artefactos.*
 
-object rolando {
+class Jugador{
 
-	var property valorBaseHechiceria
+	var property valorBaseHechiceria = 3 // porque es para todo personaje que se cree
 	var property valorBaseLucha
 	var property hechizoPreferido
 	const property artefactos = []
